@@ -30,16 +30,27 @@ header .container nav ul {
 
 header .container nav ul li a {
     text-decoration: none;
+    color: #9c9a9f;
+    
+    transition: ease-in 0.3s;
 }
 
-header .container nav ul li > a:not(.active) {
+/* header .container nav ul li > a:not(.active) {
     color: #9c9a9f;
     font-weight: 200;
-}
+} */
 
-header .container nav ul li a.active {
+/* header .container nav ul li a.active {
     color: #1F1534;
     font-weight: bold;
+} */
+
+header .container nav ul li:hover a {
+    color: #1F1534;    
+}
+
+header .container nav ul li:hover ~ li a {
+    opacity: 0.5;
 }
 
 .hero .container {
